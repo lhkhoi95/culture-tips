@@ -1,5 +1,7 @@
+import DashBoard from "./components/DashBoard";
+
 function App() {
-  return <div>Hello World</div>;
+  return <DashBoard />;
 }
 
 export default App;
