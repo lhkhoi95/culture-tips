@@ -1,4 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: local("Ubuntu-Regular"),
+    url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("Ubuntu-Medium"),
+    url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("Ubuntu-Bold"),
+    url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
