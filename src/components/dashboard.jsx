@@ -11,7 +11,7 @@ export default function DashBoard() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div>
+    <div className="text-3xl font-bold">
       {cultures?.map((culture) => (
         <div key={culture.id}>
           <p>{culture.title}</p>
