@@ -12,8 +12,8 @@ export default function LandingPage() {
         />
       </div>
       <div className="flex flex-col items-center gap-4 p-4">
-        <h1 className="text-4xl font-bold md:text-6xl">Culture Share</h1>
-        <p className="text-center text-lg font-medium text-gray-600">
+        <h1 className="font-bold text-4xl md:text-6xl">Culture Share</h1>
+        <p className="text-center font-medium text-lg text-gray-600">
           Explore and preserve diverse cultures through a platform of stories
           and experiences.
         </p>
@@ -21,7 +21,7 @@ export default function LandingPage() {
           <Button variant="outline" className="rounded-full">
             Learn more
           </Button>
-          <Link to="/dashboard">
+          <Link to="/posts">
             <Button className="rounded-full">Start Sharing</Button>
           </Link>
         </div>

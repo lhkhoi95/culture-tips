@@ -35,6 +35,6 @@ def delete_culture(request, pk):
 
 @api_view(['GET'])
 def get_cultures(request):
-    cultures = Culture.objects.all()
+    cultures = Culture.objects.all().order_by('-id')
     serializer = CultureSerializer(cultures, many=True)
     return Response(serializer.data)
