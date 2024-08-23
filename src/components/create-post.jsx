@@ -62,7 +62,7 @@ export default function CreatePost() {
     error,
     data,
     sendRequest: submitPost,
-  } = useHttp(`${import.meta.env.VITE_API_URL}/cultures/add/`, requestConfig);
+  } = useHttp("http://localhost:8000/api/cultures/add/", requestConfig);
   const form = useForm({
     resolver: zodResolver(FormSchema),
     defaultValues: {

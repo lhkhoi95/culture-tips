@@ -11,7 +11,7 @@ export default function Posts() {
     data: cultures,
     isLoading,
     error,
-  } = useHttp(`${import.meta.env.VITE_API_URL}/cultures/`, requestConfig, []);
+  } = useHttp("http://localhost:8000/api/cultures/", requestConfig, []);
 
   if (isLoading) return <Skeleton />;
   if (error) return <div>Error: {error}</div>;
